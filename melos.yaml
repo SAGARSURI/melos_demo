@@ -1,0 +1,6 @@
+name: melos_demo
+
+packages:
+  - utility/**
+  - features/**
+  - "*"
