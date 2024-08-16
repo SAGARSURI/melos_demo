@@ -12,3 +12,10 @@ scripts:
     packageFilters:
       flutter: true
       dirExists: test
+  test:
+    run: melos run test:selective_unit_test --no-select
+    description: Run All Flutter tests in this project.
+  analyze:
+    run: melos exec -- flutter analyze
+    description: run `dart analyze` in all packages.
+  gen_coverage: melos exec -- "\$MELOS_ROOT_PATH/combine_coverage.sh"
